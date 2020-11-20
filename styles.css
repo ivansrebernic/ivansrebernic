@@ -1,0 +1,341 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* My styles */
+
+
+
+
+html{
+    font-family: 'Amiko', sans-serif;
+    font-weight: 600;
+
+}
+nav{
+
+    display:flex;
+    flex-wrap: no-wrap;
+    width: 100%;
+    height:3rem;
+
+    box-shadow: lightgray 1px 1px ;
+}
+nav a {
+    color: black;
+    transition: all 0.2s;
+}
+nav a:link { 
+    text-decoration: none; 
+} 
+nav a:hover { 
+    background-color:#0096cc10;
+    color:#0096cc;
+    text-decoration: none; 
+} 
+.container-landing{
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    justify-content: space-between;
+
+}
+.container-info{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.container-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+
+}
+.container-project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: rgba(0, 0, 0, 0.13) 1px solid;
+    border-bottom: rgba(0, 0, 0, 0.13) 1px solid;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    max-width: 600px;
+}
+.container-project h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    align-self: flex-start;
+    font-family: 'Open Sans', sans-serif;
+}
+.container-project p{
+    font-family: 'Merriweather', serif;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 1.2;
+    color: rgba(128, 128, 128, 0.685);
+}
+.container-project img{
+    width: 35vw;
+
+}
+.container-project a{
+    width: 100%;
+    align-self: flex-start;
+    margin: 10px 0;
+}
+.container-project a img{
+    width: 32px;
+}
+#logo{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-width: 16rem;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+#logo a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+}
+.navigation-container{
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+}
+.navigation-container a{
+    height: 100%;
+}
+.navigation-container li{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 150px;
+    height: 100%;
+}
+.menu{
+    display:none;
+}
+
+.bg-splash{
+    min-height: 450px;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#084b630c;
+    border-bottom: 1px rgba(0, 0, 0, 0.171) solid;
+}
+.center {
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 60vh;
+    min-width: 50vw;
+
+}
+.center img{
+    border-radius: 100%;
+    object-fit: scale-down;
+    width: 150px;
+    height: 150px;
+}
+.center h1{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.753);
+    margin: 10px;
+    font-size: 3rem;
+}
+.center h3{
+    text-align: center;
+    margin: 5px;
+    color: rgba(128, 128, 128, 0.685);
+    font-size: 2rem;
+}
+.center h5{
+    margin: 20px;
+    color: rgba(128, 128, 128, 0.685);
+    font-size: 1rem;
+}
+.description{
+    display: flex;
+    justify-content: center;
+}
+.description-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 700px;
+    color: rgba(0, 0, 0, 0.753);
+    margin: 15px;
+}
+.description-text h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.description-text p{
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.4;
+    color: rgba(0, 0, 0, 0.568);
+}
+.contact{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.contact h1{
+    color: rgba(0, 0, 0, 0.753);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+.social{
+    display: flex;
+    flex-direction: column;
+
+}
+.social a{
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+.social :hover{
+    border-radius: 50px;
+    background-color:#0096cc10;
+    color:#0096cc;
+}
+.social a img{
+    margin: 5px;
+}
+footer{
+    background-color:#084b6302;
+    padding: 10px;
+    display: flex;
+    color: rgba(0, 0, 0, 0.26);
+    font-family: 'Merriweather', serif;
+}
+@media (max-width: 771px) { 
+    nav{
+        flex-wrap: wrap;
+        height: 100%;
+    }
+    
+    .navigation-container {
+        display: none;
+        width: 100% ;
+        flex-direction: column;
+    }
+    .navigation-container a{
+        width: 100%;
+        height: 3rem;
+    }
+    .navigation-container  li{
+        width: 100% ;
+        border-bottom: lightgray 1px solid;
+    }
+    .menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 12%;
+        height: 100%;
+    
+    }
+    .menu img{
+        width: 25px;
+        height: 25px;
+    }
+    .container-project img{
+        width: 300px;
+    }
+    .active{
+        display: flex;
+    }
+
+}
+.menu-item-active{
+    color:#0096cc;
+}
+.collapse {
+    display:none;
+}
